@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Shivam Prakash | 1st Year B.Tech CSE (AI & ML) Portfolio</title>
+  <meta name="description" content="Personal portfolio of Shivam Prakash, 1st-Year B.Tech Computer Science & Engineering (Artificial Intelligence & Machine Learning) student.">
+  <meta name="keywords" content="Shivam Prakash, B.Tech CSE AI ML, Student Portfolio, Python, C++, HTML, CSS, JavaScript, Machine Learning, Git">
+  <meta name="author" content="Shivam Prakash">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Shivam Prakash | B.Tech CSE (AI & ML) Portfolio">
+  <meta property="og:description" content="1st-Year B.Tech Computer Science & Engineering (AI & ML) Student Portfolio.">
+  
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress" class="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- Ambient Glow Backgrounds -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+
+  <!-- =========================================================================
+       HEADER / NAVIGATION BAR
+       ========================================================================= -->
+  <header class="site-header" id="site-header">
+    <nav class="nav-container" aria-label="Main Navigation">
+      <a href="#hero" class="brand-logo" id="brand-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">Shivam<span class="logo-highlight">.P</span></span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="#about" class="nav-link" id="nav-link-about">About</a></li>
+        <li class="nav-item"><a href="#education" class="nav-link" id="nav-link-education">Education</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link" id="nav-link-skills">Skills</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link" id="nav-link-projects">Projects</a></li>
+        <li class="nav-item"><a href="#certifications" class="nav-link" id="nav-link-certifications">Certifications</a></li>
+        <li class="nav-item"><a href="#profiles" class="nav-link" id="nav-link-profiles">Profiles</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link" id="nav-link-contact">Contact</a></li>
+      </ul>
+
+      <!-- Nav Controls -->
+      <div class="nav-actions">
+        <!-- Dark / Light Theme Toggle -->
+        <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle Dark and Light Mode" title="Toggle theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Resume Modal Trigger Button -->
+        <button class="btn btn-sm btn-outline-primary header-resume-btn" id="header-resume-btn">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          <span>Resume</span>
+        </button>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button class="mobile-toggle-btn" id="mobile-toggle-btn" aria-label="Open navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu Drawer Backdrop -->
+  <div class="mobile-drawer-backdrop" id="mobile-drawer-backdrop" aria-hidden="true"></div>
+
+  <!-- Mobile Drawer Menu -->
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+    <div class="drawer-header">
+      <span class="brand-logo">&lt;Shivam<span class="logo-highlight">.P</span>/&gt;</span>
+      <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="#hero" class="drawer-link">Home</a></li>
+      <li><a href="#about" class="drawer-link">About</a></li>
+      <li><a href="#education" class="drawer-link">Education</a></li>
+      <li><a href="#skills" class="drawer-link">Skills</a></li>
+      <li><a href="#projects" class="drawer-link">Projects</a></li>
+      <li><a href="#certifications" class="drawer-link">Certifications</a></li>
+      <li><a href="#profiles" class="drawer-link">Profiles</a></li>
+      <li><a href="#contact" class="drawer-link">Contact</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <button class="btn btn-primary w-100" id="drawer-resume-btn">View Resume</button>
+    </div>
+  </aside>
+
+  <main>
+    <!-- =========================================================================
+         HERO SECTION
+         ========================================================================= -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="status-badge" id="hero-status-badge">
+            <span class="status-dot"></span>
+            <span class="status-text">1st Year B.Tech CSE (AI &amp; ML) Student</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Shivam Prakash</span>
+          </h1>
+
+          <!-- Dynamic Typewriter Line -->
+          <div class="typewriter-container">
+            <span class="typewriter-prefix">Interested in </span>
+            <span class="typewriter-text" id="typewriter-text"></span>
+            <span class="typewriter-cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            1st-year Computer Science &amp; Engineering undergraduate specializing in Artificial Intelligence &amp; Machine Learning. Focused on strengthening programming foundations, data structures, algorithms, and practical software development.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary" id="hero-cta-projects">
+              <span>View Projects</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            
+            <button class="btn btn-outline" id="hero-cta-resume">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>View Resume</span>
+            </button>
+
+            <a href="#contact" class="btn btn-ghost" id="hero-cta-contact">
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+          <!-- Hero Social Quick Links -->
+          <div class="hero-social-bar">
+            <span class="social-bar-label">Profiles:</span>
+            <div class="social-links-row">
+              <a href="https://github.com/[your-github-username]" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile" title="GitHub">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </a>
+              <a href="https://linkedin.com/in/[your-linkedin-username]" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile" title="LinkedIn">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+              <a href="https://leetcode.com/[your-leetcode-username]" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LeetCode Profile" title="LeetCode">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                  <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .271 3.542 5.29 5.29 0 0 0 1.488 2.016l3.854 3.75 4.364 4.126a1.377 1.377 0 0 0 1.923 0 1.377 1.377 0 0 0 0-1.927L9.445 20.35l-3.791-3.69a2.535 2.535 0 0 1-.715-.97 2.65 2.65 0 0 1-.131-1.704 2.538 2.538 0 0 1 .58-1.011l3.792-4.054 4.363-4.66a1.375 1.375 0 0 0-.06-1.932 1.374 1.374 0 0 0-.961-.329zM19.467 9.172H8.388a1.375 1.375 0 1 0 0 2.75h11.079a1.375 1.375 0 1 0 0-2.75z"/>
+                </svg>
+              </a>
+              <a href="mailto:[your-email@example.com]" class="social-icon-btn" aria-label="Email Shivam" title="Email">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Profile Card (Editable Placeholder) -->
+        <div class="hero-visual-wrapper">
+          <div class="avatar-card-container">
+            <div class="avatar-glow-ring"></div>
+            <!-- NOTE: Replace assets/profile-placeholder.svg with your personal photo (e.g. assets/profile.jpg) -->
+            <div class="avatar-frame">
+              <img src="assets/profile-placeholder.svg" alt="Shivam Prakash Profile Placeholder" class="avatar-image" id="hero-avatar-img">
+            </div>
+
+            <!-- Floating Tech Chips -->
+            <div class="floating-chip chip-ai" aria-hidden="true">
+              <span class="chip-icon">🧠</span>
+              <span class="chip-text">AI &amp; ML</span>
+            </div>
+
+            <div class="floating-chip chip-python" aria-hidden="true">
+              <span class="chip-icon">🐍</span>
+              <span class="chip-text">Python</span>
+            </div>
+
+            <div class="floating-chip chip-cpp" aria-hidden="true">
+              <span class="chip-icon">⚡</span>
+              <span class="chip-text">C / C++</span>
+            </div>
+
+            <div class="floating-chip chip-dsa" aria-hidden="true">
+              <span class="chip-icon">📦</span>
+              <span class="chip-text">Git &amp; GitHub</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         ABOUT ME SECTION (NO image/profile picture in this section)
+         ========================================================================= -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Introduction</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid-clean">
+          <div class="about-narrative">
+            <h3 class="about-subtitle">1st-Year B.Tech CSE (AI &amp; ML) Undergraduate</h3>
+            
+            <p class="paragraph">
+              Hello! I am <strong>Shivam Prakash</strong>, a 1st-year Bachelor of Technology student in <strong>Computer Science &amp; Engineering</strong> with a specialization in <strong>Artificial Intelligence &amp; Machine Learning</strong>.
+            </p>
+            
+            <p class="paragraph">
+              I have a strong interest in programming, problem-solving, and technology. As a freshman, I am focusing on building solid foundations in C++, Python, Data Structures &amp; Algorithms, and mathematics, while exploring the principles of machine learning and modern software development.
+            </p>
+
+            <p class="paragraph text-placeholder">
+              [Optional: Add 1-2 sentences here about your specific current learning goals, technical interests, or career aspirations.]
+            </p>
+
+            <!-- Personal Quick Facts Grid -->
+            <div class="info-badges-grid">
+              <div class="info-card">
+                <span class="info-label">Degree</span>
+                <span class="info-value">B.Tech CSE (AI &amp; ML)</span>
+              </div>
+              <div class="info-card">
+                <span class="info-label">Current Academic Year</span>
+                <span class="info-value">1st Year (2024 &mdash; 2028)</span>
+              </div>
+              <div class="info-card">
+                <span class="info-label">College / Institute</span>
+                <span class="info-value text-placeholder">[Your College / Institute Name]</span>
+              </div>
+              <div class="info-card">
+                <span class="info-label">Location</span>
+                <span class="info-value text-placeholder">[Your City, State, India]</span>
+              </div>
+              <div class="info-card">
+                <span class="info-label">Core Interests</span>
+                <span class="info-value">AI, ML, Programming, Web Tech</span>
+              </div>
+              <div class="info-card">
+                <span class="info-label">Current Focus</span>
+                <span class="info-value">Data Structures &amp; Algorithms, Python</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature Cards Column -->
+          <div class="about-features-column">
+            <div class="feature-card">
+              <div class="feature-icon feature-icon-ai">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2a10 10 0 0 1 10 10c0 5.523-4.477 10-10 10S2 17.523 2 12a10 10 0 0 1 10-10z"></path>
+                  <circle cx="12" cy="12" r="2"></circle>
+                </svg>
+              </div>
+              <div class="feature-body">
+                <h4 class="feature-title">AI &amp; Machine Learning</h4>
+                <p class="feature-desc">Exploring machine learning fundamentals, data preprocessing, and understanding how intelligent algorithms operate on data.</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon feature-icon-dsa">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div class="feature-body">
+                <h4 class="feature-title">Programming &amp; Problem Solving</h4>
+                <p class="feature-desc">Writing clean code in Python and C/C++, practicing fundamental data structures, and sharpening algorithmic logic.</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon feature-icon-web">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <div class="feature-body">
+                <h4 class="feature-title">Modern Web &amp; Git</h4>
+                <p class="feature-desc">Understanding responsive web layouts with HTML/CSS/JavaScript and utilizing Git and GitHub for version control.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         EDUCATION SECTION
+         ========================================================================= -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Academics</span>
+          <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="timeline-wrapper">
+          <!-- Item 1: B.Tech 1st Year (Current) -->
+          <div class="timeline-item timeline-current">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+              <span class="marker-pulse"></span>
+            </div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-badge-row">
+                <span class="tag-pill tag-primary">1st Year &bull; Current</span>
+                <span class="timeline-period text-placeholder">[2024 &mdash; 2028 Expected]</span>
+              </div>
+              <h3 class="education-degree">Bachelor of Technology (B.Tech)</h3>
+              <h4 class="education-major">Computer Science &amp; Engineering (Artificial Intelligence &amp; Machine Learning)</h4>
+              <p class="education-institution">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                <span class="text-placeholder">[Your College / University Name, City]</span>
+              </p>
+              <p class="education-status">
+                <strong>Current Status:</strong> 1st Year (Semester I &amp; II) &bull; 
+                <span class="text-placeholder">CGPA / SGPA: [Your Score / 10.0]</span>
+              </p>
+              <div class="coursework-container">
+                <span class="coursework-heading">Key Coursework &amp; Subjects:</span>
+                <div class="coursework-tags">
+                  <span class="course-tag">Programming in C / C++</span>
+                  <span class="course-tag">Linear Algebra &amp; Calculus</span>
+                  <span class="course-tag">Python Programming</span>
+                  <span class="course-tag">Digital Electronics</span>
+                  <span class="course-tag">Data Structures Basics</span>
+                  <span class="course-tag">Discrete Mathematics</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Class XII (Placeholder) -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-badge-row">
+                <span class="tag-pill tag-secondary">Senior Secondary (Class XII)</span>
+                <span class="timeline-period text-placeholder">[2022 &mdash; 2024]</span>
+              </div>
+              <h3 class="education-degree">Higher Secondary Certificate (Class XII)</h3>
+              <h4 class="education-major">Science Stream (Physics, Chemistry, Mathematics &amp; Computer Science)</h4>
+              <p class="education-institution">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                <span class="text-placeholder">[Your School / Junior College Name, City]</span>
+              </p>
+              <p class="education-score">
+                <strong>Score:</strong> <span class="text-placeholder">[Your Score e.g., 88% / Grade]</span> &bull; 
+                <strong>Board:</strong> <span class="text-placeholder">[CBSE / State Board / ISC]</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3: Class X (Placeholder) -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-badge-row">
+                <span class="tag-pill tag-secondary">Secondary School (Class X)</span>
+                <span class="timeline-period text-placeholder">[2021 &mdash; 2022]</span>
+              </div>
+              <h3 class="education-degree">Secondary School Examination (Class X)</h3>
+              <h4 class="education-major">General Science &amp; Mathematics</h4>
+              <p class="education-institution">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                <span class="text-placeholder">[Your High School Name, City]</span>
+              </p>
+              <p class="education-score">
+                <strong>Score:</strong> <span class="text-placeholder">[Your Score e.g., 90% / Grade]</span> &bull; 
+                <strong>Board:</strong> <span class="text-placeholder">[CBSE / State Board / ICSE]</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SKILLS SECTION
+         ========================================================================= -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Technical Skills</span>
+          <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Core technologies, programming languages, and tools I study and use.
+          </p>
+        </div>
+
+        <div class="skills-categories-grid">
+          <!-- Programming Languages -->
+          <div class="skill-category-card glass-card">
+            <div class="category-header">
+              <div class="category-icon icon-code">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="category-title">Programming Languages</h3>
+            </div>
+            <div class="skills-chips-list">
+              <div class="skill-chip">
+                <span class="skill-chip-name">Python</span>
+                <span class="skill-chip-level">Active</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">C / C++</span>
+                <span class="skill-chip-level">Coursework / DSA</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">JavaScript</span>
+                <span class="skill-chip-level">Web Logic</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI & ML -->
+          <div class="skill-category-card glass-card">
+            <div class="category-header">
+              <div class="category-icon icon-brain">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2a9 9 0 0 0-9 9c0 3.2 1.7 6 4.3 7.5V20a2 2 0 0 0 2 2h5.4a2 2 0 0 0 2-2v-1.5c2.6-1.5 4.3-4.3 4.3-7.5a9 9 0 0 0-9-9z"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">AI &amp; Machine Learning</h3>
+            </div>
+            <div class="skills-chips-list">
+              <div class="skill-chip">
+                <span class="skill-chip-name">AI / ML Fundamentals</span>
+                <span class="skill-chip-level">Core Concepts</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">NumPy &amp; Pandas</span>
+                <span class="skill-chip-level">Data Analysis</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">Scikit-learn Basics</span>
+                <span class="skill-chip-level">Model Training</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Development -->
+          <div class="skill-category-card glass-card">
+            <div class="category-header">
+              <div class="category-icon icon-web">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                </svg>
+              </div>
+              <h3 class="category-title">Web Technologies</h3>
+            </div>
+            <div class="skills-chips-list">
+              <div class="skill-chip">
+                <span class="skill-chip-name">HTML5</span>
+                <span class="skill-chip-level">Semantic Structure</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">CSS3</span>
+                <span class="skill-chip-level">Responsive Design</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">JavaScript (ES6+)</span>
+                <span class="skill-chip-level">DOM &amp; Events</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools & Version Control -->
+          <div class="skill-category-card glass-card">
+            <div class="category-header">
+              <div class="category-icon icon-tools">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">Tools &amp; CS Fundamentals</h3>
+            </div>
+            <div class="skills-chips-list">
+              <div class="skill-chip">
+                <span class="skill-chip-name">Git &amp; GitHub</span>
+                <span class="skill-chip-level">Version Control</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">VS Code</span>
+                <span class="skill-chip-level">Code Editor</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">Data Structures (Basics)</span>
+                <span class="skill-chip-level">Fundamental</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         PROJECTS SECTION (Clean Editable Cards)
+         ========================================================================= -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Practical Work</span>
+          <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Academic and personal projects. Replace the placeholders below with your own projects.
+          </p>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="project-filter-tabs" role="tablist" aria-label="Filter Projects">
+          <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-tab" data-filter="ai" role="tab" aria-selected="false">AI &amp; ML</button>
+          <button class="filter-tab" data-filter="web" role="tab" aria-selected="false">Web Dev</button>
+          <button class="filter-tab" data-filter="other" role="tab" aria-selected="false">Other / Tools</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+          
+          <!-- ================= EDITABLE: PROJECT 1 ================= -->
+          <article class="project-card glass-card" data-category="ai" data-project-id="p1">
+            <div class="project-image-wrapper">
+              <img src="assets/project-placeholder.svg" alt="Project 1 Thumbnail Placeholder" class="project-thumb" loading="lazy">
+              <span class="project-category-badge badge-ai">AI &amp; ML</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title text-placeholder">[Project Title 1: AI / ML Project]</h3>
+              <p class="project-description text-placeholder">
+                [Describe your project in 2-3 sentences: Explain the problem it addresses, the machine learning model or dataset utilized, and the key outcome.]
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">AI / ML</span>
+                <span class="tech-tag">[Library Name]</span>
+              </div>
+              <div class="project-footer-links">
+                <a href="https://github.com/[your-github-username]/[project-repo-1]" target="_blank" rel="noopener noreferrer" class="project-link" title="GitHub Code">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  <span>Code</span>
+                </a>
+                <a href="https://[your-demo-url-1]" target="_blank" rel="noopener noreferrer" class="project-link" title="Live Demo">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>Live Demo</span>
+                </a>
+                <button class="project-link-btn project-details-trigger" data-project-id="p1">
+                  Details &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- ================= EDITABLE: PROJECT 2 ================= -->
+          <article class="project-card glass-card" data-category="web" data-project-id="p2">
+            <div class="project-image-wrapper">
+              <img src="assets/project-placeholder.svg" alt="Project 2 Thumbnail Placeholder" class="project-thumb" loading="lazy">
+              <span class="project-category-badge badge-web">Web Dev</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title text-placeholder">[Project Title 2: Web Project]</h3>
+              <p class="project-description text-placeholder">
+                [Describe your web project in 2-3 sentences: Mention the structure, front-end features, interactivity, and design tools you utilized.]
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <div class="project-footer-links">
+                <a href="https://github.com/[your-github-username]/[project-repo-2]" target="_blank" rel="noopener noreferrer" class="project-link" title="GitHub Code">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  <span>Code</span>
+                </a>
+                <a href="https://[your-demo-url-2]" target="_blank" rel="noopener noreferrer" class="project-link" title="Live Demo">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>Live Demo</span>
+                </a>
+                <button class="project-link-btn project-details-trigger" data-project-id="p2">
+                  Details &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- ================= EDITABLE: PROJECT 3 ================= -->
+          <article class="project-card glass-card" data-category="other" data-project-id="p3">
+            <div class="project-image-wrapper">
+              <img src="assets/project-placeholder.svg" alt="Project 3 Thumbnail Placeholder" class="project-thumb" loading="lazy">
+              <span class="project-category-badge badge-algo">C++ / Algorithms</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title text-placeholder">[Project Title 3: C++ / Core Tool]</h3>
+              <p class="project-description text-placeholder">
+                [Describe your C++/programming project: Outline the logic, problem solving concepts, or algorithmic features implemented.]
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">C / C++</span>
+                <span class="tech-tag">Data Structures</span>
+                <span class="tech-tag">Git</span>
+              </div>
+              <div class="project-footer-links">
+                <a href="https://github.com/[your-github-username]/[project-repo-3]" target="_blank" rel="noopener noreferrer" class="project-link" title="GitHub Code">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  <span>Code</span>
+                </a>
+                <a href="https://[your-demo-url-3]" target="_blank" rel="noopener noreferrer" class="project-link" title="Live Demo">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>Live Demo</span>
+                </a>
+                <button class="project-link-btn project-details-trigger" data-project-id="p3">
+                  Details &rarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         ACHIEVEMENTS & CERTIFICATIONS SECTION (Placeholder Section)
+         ========================================================================= -->
+    <section class="section certifications-section" id="certifications">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Credentials</span>
+          <h2 class="section-title">Achievements &amp; <span class="gradient-text">Certifications</span></h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Placeholder section for courses, certifications, and academic milestones. Replace with your actual achievements.
+          </p>
+        </div>
+
+        <div class="certifications-grid">
+          
+          <!-- Placeholder Card 1 -->
+          <div class="cert-card glass-card">
+            <div class="cert-badge-icon cert-gold">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+            </div>
+            <div class="cert-content">
+              <span class="cert-issuer text-placeholder">[Course Platform / Issuing Organization]</span>
+              <h3 class="cert-title text-placeholder">[Certification / Course Title 1]</h3>
+              <p class="cert-date text-placeholder">Issued: [Month, Year] &bull; ID: [Credential ID]</p>
+              <p class="cert-description text-placeholder">
+                [Brief summary of topics covered in the certification or training.]
+              </p>
+              <a href="https://[credential-verification-link]" target="_blank" rel="noopener noreferrer" class="cert-link">
+                <span>Verify Credential</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Placeholder Card 2 -->
+          <div class="cert-card glass-card">
+            <div class="cert-badge-icon cert-blue">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+              </svg>
+            </div>
+            <div class="cert-content">
+              <span class="cert-issuer text-placeholder">[Course Platform / Issuing Organization]</span>
+              <h3 class="cert-title text-placeholder">[Certification / Course Title 2]</h3>
+              <p class="cert-date text-placeholder">Issued: [Month, Year] &bull; ID: [Credential ID]</p>
+              <p class="cert-description text-placeholder">
+                [Brief summary of skills learned, tools used, or projects created during the course.]
+              </p>
+              <a href="https://[credential-verification-link]" target="_blank" rel="noopener noreferrer" class="cert-link">
+                <span>Verify Credential</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Placeholder Card 3 -->
+          <div class="cert-card glass-card">
+            <div class="cert-badge-icon cert-purple">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <div class="cert-content">
+              <span class="cert-issuer text-placeholder">[Organizing Institution / Event]</span>
+              <h3 class="cert-title text-placeholder">[Achievement / Hackathon / Competition]</h3>
+              <p class="cert-date text-placeholder">Year / Semester: [Year] &bull; [Participant / Position]</p>
+              <p class="cert-description text-placeholder">
+                [Brief summary of the event, problem tackled, or achievement earned.]
+              </p>
+              <span class="cert-status-badge text-placeholder">[Milestone Placeholder]</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         PROFILES SECTION
+         ========================================================================= -->
+    <section class="section profiles-section" id="profiles">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Connect</span>
+          <h2 class="section-title">Coding &amp; <span class="gradient-text">Profiles</span></h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Find and connect with me across developer platforms and professional networks.
+          </p>
+        </div>
+
+        <div class="profiles-grid">
+          <!-- GitHub -->
+          <a href="https://github.com/[your-github-username]" target="_blank" rel="noopener noreferrer" class="profile-card glass-card" id="profile-card-github">
+            <div class="profile-card-icon icon-github">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </div>
+            <div class="profile-card-details">
+              <h3 class="profile-name">GitHub</h3>
+              <p class="profile-handle text-placeholder">github.com/[your-username]</p>
+              <div class="profile-stats">
+                <span class="stat-item">Repositories &bull; Code</span>
+              </div>
+            </div>
+            <span class="profile-arrow">&rarr;</span>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://linkedin.com/in/[your-linkedin-username]" target="_blank" rel="noopener noreferrer" class="profile-card glass-card" id="profile-card-linkedin">
+            <div class="profile-card-icon icon-linkedin">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </div>
+            <div class="profile-card-details">
+              <h3 class="profile-name">LinkedIn</h3>
+              <p class="profile-handle text-placeholder">linkedin.com/in/[your-username]</p>
+              <div class="profile-stats">
+                <span class="stat-item">Professional Network</span>
+              </div>
+            </div>
+            <span class="profile-arrow">&rarr;</span>
+          </a>
+
+          <!-- LeetCode -->
+          <a href="https://leetcode.com/[your-leetcode-username]" target="_blank" rel="noopener noreferrer" class="profile-card glass-card" id="profile-card-leetcode">
+            <div class="profile-card-icon icon-leetcode">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+                <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .271 3.542 5.29 5.29 0 0 0 1.488 2.016l3.854 3.75 4.364 4.126a1.377 1.377 0 0 0 1.923 0 1.377 1.377 0 0 0 0-1.927L9.445 20.35l-3.791-3.69a2.535 2.535 0 0 1-.715-.97 2.65 2.65 0 0 1-.131-1.704 2.538 2.538 0 0 1 .58-1.011l3.792-4.054 4.363-4.66a1.375 1.375 0 0 0-.06-1.932 1.374 1.374 0 0 0-.961-.329zM19.467 9.172H8.388a1.375 1.375 0 1 0 0 2.75h11.079a1.375 1.375 0 1 0 0-2.75z"/>
+              </svg>
+            </div>
+            <div class="profile-card-details">
+              <h3 class="profile-name">LeetCode</h3>
+              <p class="profile-handle text-placeholder">leetcode.com/[your-username]</p>
+              <div class="profile-stats">
+                <span class="stat-item">Problem Solving &bull; Practice</span>
+              </div>
+            </div>
+            <span class="profile-arrow">&rarr;</span>
+          </a>
+
+          <!-- Additional Coding Profile Placeholder -->
+          <a href="https://[your-coding-profile-url]" target="_blank" rel="noopener noreferrer" class="profile-card glass-card" id="profile-card-other">
+            <div class="profile-card-icon icon-code">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <div class="profile-card-details">
+              <h3 class="profile-name text-placeholder">[Other Profile e.g., HackerRank]</h3>
+              <p class="profile-handle text-placeholder">[your-profile-url]</p>
+              <div class="profile-stats">
+                <span class="stat-item text-placeholder">[Profile Details]</span>
+              </div>
+            </div>
+            <span class="profile-arrow">&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         CONTACT SECTION
+         ========================================================================= -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Get in Touch</span>
+          <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Have a question, advice, or want to discuss a project? Feel free to send a message.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column: Contact Details -->
+          <div class="contact-info-column glass-card">
+            <h3 class="contact-info-title">Contact Details</h3>
+            <p class="contact-info-subtitle">
+              You can reach me directly via email or through my social profiles.
+            </p>
+
+            <div class="contact-methods-list">
+              <!-- Email -->
+              <div class="contact-method-item">
+                <div class="method-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="method-content">
+                  <span class="method-label">Email Address</span>
+                  <a href="mailto:[your-email@example.com]" class="method-value text-placeholder" id="contact-email-link">[your-email@example.com]</a>
+                  <button class="copy-btn" id="copy-email-btn" title="Copy Email to Clipboard">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                    <span>Copy</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="contact-method-item">
+                <div class="method-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="method-content">
+                  <span class="method-label">Location</span>
+                  <span class="method-value text-placeholder">[Your City, State, India]</span>
+                </div>
+              </div>
+
+              <!-- Current Role -->
+              <div class="contact-method-item">
+                <div class="method-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                  </svg>
+                </div>
+                <div class="method-content">
+                  <span class="method-label">Current Role</span>
+                  <span class="method-value">1st Year B.Tech CSE (AI &amp; ML) Student</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-notice-box">
+              <div class="notice-icon">✏️</div>
+              <p class="notice-text">
+                To update your contact email or other details, open <code>index.html</code> and edit the bracketed placeholder text.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Contact Form -->
+          <div class="contact-form-column glass-card">
+            <h3 class="contact-form-title">Send a Message</h3>
+            <form id="portfolio-contact-form" class="portfolio-form" novalidate>
+              <div class="form-group">
+                <label for="form-name" class="form-label">Name <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <input type="text" id="form-name" name="name" class="form-input" placeholder="Your Name" required autocomplete="name">
+                </div>
+                <span class="form-error-msg" id="name-error">Please enter your name.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" class="form-label">Email <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <input type="email" id="form-email" name="email" class="form-input" placeholder="Your Email Address" required autocomplete="email">
+                </div>
+                <span class="form-error-msg" id="email-error">Please enter a valid email address.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject" class="form-label">Subject</label>
+                <div class="input-wrapper">
+                  <input type="text" id="form-subject" name="subject" class="form-input" placeholder="Subject / Topic">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">Message <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <textarea id="form-message" name="message" class="form-textarea" rows="4" placeholder="Your message here..." required></textarea>
+                </div>
+                <span class="form-error-msg" id="message-error">Please enter at least 10 characters.</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100 btn-submit" id="form-submit-btn">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-spinner" aria-hidden="true"></span>
+                <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-logo">&lt;Shivam<span class="logo-highlight">.P</span>/&gt;</span>
+        <p class="footer-subtext">
+          Shivam Prakash &bull; 1st-Year B.Tech CSE (AI &amp; ML)
+        </p>
+      </div>
+
+      <div class="footer-center">
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-right">
+        <p class="copyright-text">
+          &copy; <span id="current-year">2026</span> Shivam Prakash.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top-btn" id="back-to-top-btn" aria-label="Back to top" title="Scroll to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- =========================================================================
+       RESUME PREVIEW MODAL (Pure Template & Placeholder Structure)
+       ========================================================================= -->
+  <div class="modal-backdrop" id="resume-modal" aria-hidden="true" role="dialog" aria-labelledby="resume-modal-title">
+    <div class="modal-dialog resume-modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <h3 class="modal-title" id="resume-modal-title">Resume &mdash; Shivam Prakash</h3>
+          <span class="badge-pill">1st-Year B.Tech CSE (AI &amp; ML)</span>
+        </div>
+        <button class="modal-close-btn" id="resume-modal-close" aria-label="Close Modal">&times;</button>
+      </div>
+
+      <div class="modal-body resume-modal-body">
+        <div class="resume-paper" id="printable-resume">
+          <!-- Resume Header -->
+          <div class="resume-paper-header">
+            <h1 class="resume-name">SHIVAM PRAKASH</h1>
+            <p class="resume-contact-line">
+              <span class="text-placeholder">Email: [your-email@example.com]</span> &bull; 
+              <span class="text-placeholder">Phone: [Your Phone Number]</span> &bull; 
+              <span class="text-placeholder">Location: [Your City, State, India]</span>
+            </p>
+            <p class="resume-links-line">
+              <span class="text-placeholder">GitHub: github.com/[your-github-username]</span> &bull; 
+              <span class="text-placeholder">LinkedIn: linkedin.com/in/[your-linkedin-username]</span>
+            </p>
+          </div>
+
+          <!-- Objective -->
+          <div class="resume-section">
+            <h4 class="resume-sec-title">CAREER OBJECTIVE</h4>
+            <p class="resume-sec-text">
+              1st-year B.Tech Computer Science &amp; Engineering (Artificial Intelligence &amp; Machine Learning) student with an interest in Python, C/C++, core computer science fundamentals, and data structures. Eager to expand practical knowledge, build software projects, and contribute to collaborative engineering teams.
+            </p>
+          </div>
+
+          <!-- Education -->
+          <div class="resume-section">
+            <h4 class="resume-sec-title">EDUCATION</h4>
+            <div class="resume-item">
+              <div class="resume-item-top">
+                <strong>B.Tech in Computer Science &amp; Engineering (AI &amp; ML)</strong>
+                <span class="text-placeholder">2024 &mdash; 2028 (Expected)</span>
+              </div>
+              <div class="resume-item-sub text-placeholder">[Your College / University Name, City] &bull; 1st Year (CGPA: [Your Score]/10.0)</div>
+              <div class="resume-item-sub">Relevant Coursework: Programming in C/C++, Python, Linear Algebra, Data Structures Basics.</div>
+            </div>
+            <div class="resume-item">
+              <div class="resume-item-top">
+                <strong>Senior Secondary (Class XII - Science Stream)</strong>
+                <span class="text-placeholder">[2022 &mdash; 2024]</span>
+              </div>
+              <div class="resume-item-sub text-placeholder">[Your Senior Secondary School Name, City] &bull; Score: [Your Percentage / Grade]</div>
+            </div>
+            <div class="resume-item">
+              <div class="resume-item-top">
+                <strong>Secondary School Examination (Class X)</strong>
+                <span class="text-placeholder">[2021 &mdash; 2022]</span>
+              </div>
+              <div class="resume-item-sub text-placeholder">[Your High School Name, City] &bull; Score: [Your Percentage / Grade]</div>
+            </div>
+          </div>
+
+          <!-- Skills -->
+          <div class="resume-section">
+            <h4 class="resume-sec-title">TECHNICAL SKILLS</h4>
+            <p class="resume-sec-text">
+              <strong>Languages:</strong> Python, C, C++, JavaScript, HTML, CSS.<br>
+              <strong>AI &amp; Data:</strong> AI/ML Fundamentals, NumPy, Pandas, Scikit-learn Basics.<br>
+              <strong>Developer Tools:</strong> Git, GitHub, VS Code.<br>
+              <strong>CS Fundamentals:</strong> Data Structures &amp; Algorithms Basics, Problem Solving.
+            </p>
+          </div>
+
+          <!-- Projects -->
+          <div class="resume-section">
+            <h4 class="resume-sec-title">PROJECTS</h4>
+            <div class="resume-item">
+              <div class="resume-item-top">
+                <strong class="text-placeholder">[Project Title 1] | [Technologies Used]</strong>
+                <span class="text-placeholder">[Year]</span>
+              </div>
+              <ul class="resume-bullets">
+                <li class="text-placeholder">[Describe your key contribution, architecture, or model in this project.]</li>
+                <li class="text-placeholder">[Describe the result, accuracy, or user interface implemented.]</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <div class="resume-item-top">
+                <strong class="text-placeholder">[Project Title 2] | [Technologies Used]</strong>
+                <span class="text-placeholder">[Year]</span>
+              </div>
+              <ul class="resume-bullets">
+                <li class="text-placeholder">[Describe what this project accomplishes and technologies used.]</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Certifications -->
+          <div class="resume-section">
+            <h4 class="resume-sec-title">CERTIFICATIONS &amp; ACHIEVEMENTS</h4>
+            <ul class="resume-bullets">
+              <li class="text-placeholder">[Certification / Course Title] &bull; [Issuing Organization] ([Year])</li>
+              <li class="text-placeholder">[Hackathon / Coding Competition / Award] &bull; [Organization] ([Year])</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-outline" id="print-resume-btn">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+          </svg>
+          <span>Print / Save PDF</span>
+        </button>
+        <button class="btn btn-primary" id="download-resume-btn">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Download Resume Text</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       PROJECT DETAIL MODAL
+       ========================================================================= -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true" role="dialog" aria-labelledby="project-modal-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title" id="project-modal-title">Project Details</h3>
+        <button class="modal-close-btn" id="project-modal-close" aria-label="Close Modal">&times;</button>
+      </div>
+      <div class="modal-body" id="project-modal-body">
+        <!-- Dynamic placeholder content handled in script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notifications -->
+  <div class="toast-container" id="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
